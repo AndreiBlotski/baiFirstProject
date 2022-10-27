@@ -2,8 +2,13 @@ package lesson4;
 
 public class Cat {
 
-    private String  name;
-    private int age;
+    public String name;
+    public int age;
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public String getName() {
         return name;
@@ -19,5 +24,19 @@ public class Cat {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void name(String[] arrName1) {
+    }
+
+    public void age(int[] arrAge1) {
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
